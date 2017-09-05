@@ -13,9 +13,9 @@
     "<rootDir>/dist/"
   ],
   "coverageReporters": [
-    "lcov",
     "text",
-    "text-summary"
+    "text-summary",
+    "html"
   ],
   "coverageThreshold": {
     "global": {
