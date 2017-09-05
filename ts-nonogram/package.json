@@ -4,9 +4,11 @@
   "description": "Creating nonogram game using different languages",
   "main": "index.ts",
   "scripts": {
+    "debug": "node --inspect-brk node_modules/.bin/jest --runInBand --config=./jest.json",
     "clean:dist": "rimraf dist",
     "clean:jest": "rimraf .jest",
-    "clean": "run-p clean:dist clean:jest",
+    "clean:coverage": "rimraf coverage",
+    "clean": "run-p clean:dist clean:jest clean:coverage",
     "test:lint": "tslint --type-check -c tslint.json -p tsconfig.json",
     "test:unit": "jest --coverage --config=./jest.json",
     "test": "run-s test:lint test:unit",
