@@ -1,0 +1,35 @@
+{
+  "cacheDirectory": "./.jest",
+  "transform": {
+    "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+  },
+  "collectCoverage": false,
+  "collectCoverageFrom": [
+    "**/*.{ts,tsx}",
+    "!**/node_modules/**"
+  ],
+  "coveragePathIgnorePatterns": [
+    "<rootDir>/node_modules/",
+    "<rootDir>/dist/"
+  ],
+  "coverageReporters": [
+    "lcov",
+    "text",
+    "text-summary"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 0,
+      "functions": 0,
+      "lines": 0,
+      "statements": 0
+    }
+  },
+  "testRegex": "(\\.(test))\\.(ts|tsx|js)$",
+  "moduleFileExtensions": [
+    "js",
+    "ts",
+    "tsx",
+    "json"
+  ]
+}

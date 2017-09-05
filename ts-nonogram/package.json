@@ -5,8 +5,9 @@
   "main": "index.ts",
   "scripts": {
     "test:lint": "tslint --type-check -c tslint.json -p tsconfig.json",
-    "test:unit": "jest --coverage",
+    "test:unit": "jest --coverage --config=./jest.json",
     "test": "run-s test:lint test:unit",
+    "watch:test": "jest --watchAll --config=./jest.json",
     "build": "webpack",
     "start": "webpack-dev-server",
     "prepush": "run-s test"
