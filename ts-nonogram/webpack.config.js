@@ -1,13 +1,18 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.ts',
   output: {
-    filename: 'bundle.js',
+    filename: 'app/index.js',
     path: path.join(__dirname, 'dist'),
   },
   resolve: {
     extensions: ['.js', '.ts', '.tsx'],
+  },
+  devServer: {
+    inline: true,
+    port: 8080
   },
   module: {
     rules: [
@@ -23,5 +28,9 @@ module.exports = {
       //   ]
       // },
     ]
-  }
+  },
+  plugins: [new HtmlWebpackPlugin({
+    template: 'src/index.html',
+    title: 'Nonograms'
+  })]
 };
