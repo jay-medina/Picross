@@ -1,6 +1,6 @@
 import { shallow, ShallowWrapper } from 'enzyme';
 import React from 'react';
-import Cell from './Cell';
+import Cell from '.';
 
 describe('Cell', () => {
   describe('render', () => {
