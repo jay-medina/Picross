@@ -31,5 +31,8 @@
     "ts",
     "tsx",
     "json"
-  ]
+  ],
+  "moduleNameMapper": {
+    "\\.(css)$": "<rootDir>/__mocks__/styleMock.js"
+  }
 }
