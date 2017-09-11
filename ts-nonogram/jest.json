@@ -5,6 +5,7 @@
   },
   "collectCoverage": false,
   "collectCoverageFrom": [
+    "!**/src/index.tsx",
     "**/*.{ts,tsx}",
     "!**/node_modules/**"
   ],
