@@ -1,0 +1,27 @@
+:root {
+  --main-color: #546e7a;
+  --secondary-color: #29434e;
+  --white: #FFF;
+}
+.cell {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  background-color: var(--main-color);
+}
+
+.selected {
+  background-color: var(--white);
+  margin: 0.15rem;
+  width: inherit;
+}
+
+.cross {
+  color: var(--secondary-color);
+  font-size: 4rem;
+  position: relative;
+  top: -17px;
+}
