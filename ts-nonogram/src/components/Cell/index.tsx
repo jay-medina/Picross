@@ -1,8 +1,26 @@
 import React from 'react';
 import './index.css';
 
-const Cell: React.StatelessComponent<{}> = () => {
-  return <div className="cell">Hello world</div>;
+interface CellProps {
+  state?: 'selected' | 'crossed';
+}
+
+const Cell: React.StatelessComponent<CellProps> = ({ state }) => {
+  if (state === 'crossed') {
+    return (
+      <div className="cell">
+        <div className="cross">&times;</div>
+      </div>
+    );
+  } else if (state === 'selected') {
+    return (
+      <div className="cell">
+        <div className="selected" />
+      </div>
+    );
+  }
+
+  return <div className="cell" />;
 };
 
 export default Cell;
