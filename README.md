@@ -1,3 +1,5 @@
+ <img src="https://travis-ci.org/mrfunkycold/Picross.svg?branch=master" />
+ 
 # Picross
  Creating Picross Game using TypeScript
 
