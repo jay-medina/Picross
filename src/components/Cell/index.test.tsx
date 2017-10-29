@@ -1,6 +1,6 @@
 import { shallow, ShallowWrapper } from 'enzyme';
 import React from 'react';
-import Cell from '.';
+import Cell, { CellState } from '.';
 
 describe('Cell', () => {
   let onClick: jest.Mock<{}>;
@@ -10,7 +10,7 @@ describe('Cell', () => {
     beforeEach(() => {
       onClick = jest.fn();
       wrapper = shallow(
-        <Cell onClick={onClick}/>,
+        <Cell row={0} column={0} onClick={onClick}/>,
       );
     });
 
@@ -23,7 +23,7 @@ describe('Cell', () => {
     beforeEach(() => {
       onClick = jest.fn();
       wrapper = shallow(
-        <Cell state="selected" onClick={onClick}/>,
+        <Cell row={0} column={0} state={CellState.Selected} onClick={onClick}/>,
       );
     });
 
@@ -36,7 +36,7 @@ describe('Cell', () => {
     beforeEach(() => {
       onClick = jest.fn();
       wrapper = shallow(
-        <Cell state="crossed" onClick={onClick}/>,
+        <Cell row={0} column={0} state={CellState.Crossed} onClick={onClick}/>,
       );
     });
     it('should cross out the cell', () => {
@@ -48,7 +48,7 @@ describe('Cell', () => {
     beforeEach(() => {
       onClick = jest.fn();
       wrapper = shallow(
-        <Cell state="crossed" onClick={onClick}/>,
+        <Cell row={0} column={0} state={CellState.Crossed} onClick={onClick}/>,
       );
       wrapper.simulate('click');
     });

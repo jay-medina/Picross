@@ -1,22 +1,24 @@
 import React from 'react';
-import Cell, { CellProps } from '../Cell';
+import Cell, { CellProps, CellState } from '../Cell';
 import './index.css';
 
 export interface BoardProps {
   rows: number;
   columns: number;
+  onClick: (row: number, column: number) => void;
+  cellStates: CellStates;
+}
+
+export interface CellStates {
+  [key: string]: (CellState | undefined);
 }
 
 class Board extends React.PureComponent<BoardProps, {}> {
-  constructor() {
-    super();
-    this.onClick = this.onClick.bind(this);
-  }
   render() {
     return (
-     <div>
-       {this.createRowOfCells()}
-     </div> 
+      <div>
+        {this.createRowOfCells()}
+      </div>
     );
   }
   private createRowOfCells() {
@@ -34,7 +36,7 @@ class Board extends React.PureComponent<BoardProps, {}> {
   private createRow(rowIndex: number) {
     const { columns } = this.props;
     return (
-      <div className="row">
+      <div key={rowIndex} className="row">
         {this.createCellArray(columns, rowIndex)}
       </div>
     );
@@ -42,16 +44,21 @@ class Board extends React.PureComponent<BoardProps, {}> {
 
   private createCellArray(columns: number, rowIndex: number) {
     const cells: React.ReactElement<CellProps>[] = [];
-
     for (let index = 0; index < columns; index += 1) {
-      cells.push(<Cell key={`${rowIndex} - ${index}`} onClick={this.onClick} />);
+      const key = `${rowIndex} - ${index}`;
+      const state = this.props.cellStates[key];
+      cells.push(
+        <Cell 
+          key={key} 
+          row={rowIndex} 
+          column={index} 
+          onClick={this.props.onClick}
+          state={state}
+        />,
+      );
     }
 
     return cells;
-  }
-
-  private onClick() {
-    alert('cell clicked');
   }
 }
 
