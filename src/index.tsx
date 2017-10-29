@@ -1,27 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import '../config/polyfills';
-import Cell, { CellState } from './components/Cell';
+import Board from './components/Board';
+// import Cell, { CellState } from './components/Cell';
 
 const mainContainer = document.querySelector('#main-container');
 
-const states: [ CellState | undefined ] = [undefined, 'crossed', 'selected'];
+// const states: [ CellState | undefined ] = [undefined, 'crossed', 'selected'];
 
-let currentStateIndex = 0;
-let currentState = states[currentStateIndex];
+// let currentStateIndex = 0;
+// let currentState = states[currentStateIndex];
 
-function onClick() {
-  currentStateIndex += 1;
-  if (currentStateIndex >= states.length) {
-    currentStateIndex = 0;
-  }
+// function onClick() {
+//   currentStateIndex += 1;
+//   if (currentStateIndex >= states.length) {
+//     currentStateIndex = 0;
+//   }
 
-  currentState = states[currentStateIndex];
-  render();
-}
+//   currentState = states[currentStateIndex];
+//   render();
+// }
 
 function render() {
-  ReactDOM.render(<Cell state={currentState} onClick={onClick}/> , mainContainer);
+  ReactDOM.render(<Board rows={2} columns={2} /> , mainContainer);
 }
 
 render();
