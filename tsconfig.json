@@ -4,7 +4,7 @@
         "jsx": "react",
         "module": "es2015",
         "target": "es5",
-        "lib": ["es6", "dom"],
+        "lib": ["esnext", "dom"],
         "sourceMap": true,
         "strict": true,
         "noUnusedLocals": true,

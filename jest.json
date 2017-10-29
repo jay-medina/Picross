@@ -35,5 +35,9 @@
   ],
   "moduleNameMapper": {
     "\\.(css)$": "<rootDir>/__mocks__/styleMock.js"
-  }
+  },
+  "setupFiles": [
+    "./config/polyfills",
+    "./config/jest/enzyme.js"
+  ]
 }
