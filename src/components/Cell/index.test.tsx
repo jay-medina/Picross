@@ -3,12 +3,14 @@ import React from 'react';
 import Cell from '.';
 
 describe('Cell', () => {
+  let onClick: jest.Mock<{}>;
   let wrapper: ShallowWrapper;
 
   describe('by default', () => {
     beforeEach(() => {
+      onClick = jest.fn();
       wrapper = shallow(
-        <Cell />,
+        <Cell onClick={onClick}/>,
       );
     });
 
@@ -19,8 +21,9 @@ describe('Cell', () => {
 
   describe('selected', () => {
     beforeEach(() => {
+      onClick = jest.fn();
       wrapper = shallow(
-        <Cell state="selected" />,
+        <Cell state="selected" onClick={onClick}/>,
       );
     });
 
@@ -31,12 +34,27 @@ describe('Cell', () => {
 
   describe('crossed', () => {
     beforeEach(() => {
+      onClick = jest.fn();
       wrapper = shallow(
-        <Cell state="crossed" />,
+        <Cell state="crossed" onClick={onClick}/>,
       );
     });
     it('should cross out the cell', () => {
       expect(wrapper.find('.cross').length).toBe(1);
+    });
+  });
+
+  describe('when clicked', () => {
+    beforeEach(() => {
+      onClick = jest.fn();
+      wrapper = shallow(
+        <Cell state="crossed" onClick={onClick}/>,
+      );
+      wrapper.simulate('click');
+    });
+
+    it('should invoke the onClick call back', () => {
+      expect(onClick).toHaveBeenCalled();
     });
   });
 });

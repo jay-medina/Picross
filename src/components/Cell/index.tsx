@@ -1,26 +1,25 @@
 import React from 'react';
 import './index.css';
 
-interface CellProps {
-  state?: 'selected' | 'crossed';
+export type CellState = 'selected' | 'crossed';
+
+export interface CellProps {
+  state?: CellState;
+  onClick: () => void;
 }
 
-const Cell: React.StatelessComponent<CellProps> = ({ state }) => {
-  if (state === 'crossed') {
-    return (
-      <div className="cell">
-        <div className="cross">&times;</div>
-      </div>
-    );
-  } else if (state === 'selected') {
-    return (
-      <div className="cell">
-        <div className="selected" />
-      </div>
-    );
+function getChildElement(state?: CellState) {
+  switch (state) {
+    case 'crossed': return <div className="cross">&times;</div>;
+    case 'selected': return <div className="selected" />;
+    default: return null;
   }
+}
 
-  return <div className="cell" />;
-};
+const Cell: React.StatelessComponent<CellProps> = ({ state, onClick }) => (
+  <div className="cell" onClick={onClick}>
+    {getChildElement(state)}
+  </div>
+);
 
 export default Cell;
