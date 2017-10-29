@@ -31,6 +31,7 @@ module.exports = {
   },
   plugins: [new HtmlWebpackPlugin({
     template: 'src/index.html',
-    title: 'Nonograms'
+    title: 'Picross',
+    favicon: 'src/images/favicon.png'
   })]
 };
