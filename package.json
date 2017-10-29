@@ -51,6 +51,7 @@
     "ts-jest": "^21.1.4",
     "ts-loader": "^3.1.0",
     "tslint": "^5.8.0",
+    "tslint-config-airbnb": "^5.3.0",
     "tslint-react": "^3.2.0",
     "typescript": "^2.5.3",
     "webpack": "^3.8.1",
