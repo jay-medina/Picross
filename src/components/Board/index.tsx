@@ -1,5 +1,7 @@
 import React from 'react';
-import Cell, { CellProps } from '../Cell';
+import { Range } from 'immutable';
+import Cell from '../Cell';
+import BoardHints from '../BoardHints';
 import { getState, createKey, CellStates } from '../Cell/cellStateTransformer';
 import './index.css';
 
@@ -20,42 +22,36 @@ class Board extends React.PureComponent<BoardProps, {}> {
   }
   private createRowOfCells() {
     const { rows } = this.props;
-    const rowOfCells: React.ReactElement<CellProps>[] = [];
 
-    for (let index = 0; index < rows; index += 1) {
-      const cells = this.createRow(index);
-
-      rowOfCells.push(cells);
-    }
-    return rowOfCells;
+    return Range(0, rows).map(
+      (value: number) => this.createRow(value),
+    ).toJS();
   }
 
   private createRow(rowIndex: number) {
     const { columns } = this.props;
     return (
       <div key={rowIndex} className="row">
+        <BoardHints direction="row" hints={[1, 2, 1]} />
         {this.createCellArray(columns, rowIndex)}
       </div>
     );
   }
 
   private createCellArray(columns: number, row: number) {
-    const cells: React.ReactElement<CellProps>[] = [];
-    for (let col = 0; col < columns; col += 1) {
+    return Range(0, columns).map((col: number) => {
       const key = createKey(row, col);
       const state = getState(this.props.cellStates, key);
-      cells.push(
-        <Cell 
-          key={key} 
-          row={row} 
-          column={col} 
+      return (
+        <Cell
+          key={key}
+          row={row}
+          column={col}
           onClick={this.props.onClick}
           state={state}
-        />,
+        />
       );
-    }
-
-    return cells;
+    }).toJS();
   }
 }
 
