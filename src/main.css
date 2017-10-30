@@ -1,3 +1,17 @@
+:root {
+  --board-color: #37474f;
+  --secondary-color: #607d8b;
+  --dark-blue: #102027;
+  --white: #FFF;
+}
+* {
+  box-sizing: border-box;
+}
+html, body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
 #main-container {
   display: flex;
   justify-content: center; 

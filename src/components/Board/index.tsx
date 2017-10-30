@@ -32,7 +32,7 @@ class Board extends React.PureComponent<BoardProps, {}> {
     const { columns } = this.props;
     return (
       <div key={rowIndex} className="row">
-        <BoardHints direction="row" hints={[1, 2, 1]} />
+        <BoardHints direction="row" hints={[1, 2, 3]} />
         {this.createCellArray(columns, rowIndex)}
       </div>
     );

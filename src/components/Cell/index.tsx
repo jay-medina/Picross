@@ -24,7 +24,7 @@ class Cell extends React.PureComponent<CellProps, {}> {
   private getChildElement() {
     const { state } = this.props;
     switch (state) {
-      case 'crossed': return <div className="cross">&times;</div>;
+      case 'crossed': return <span className="cross">&times;</span>;
       case 'selected': return <div className="selected" />;
       default: return null;
     }

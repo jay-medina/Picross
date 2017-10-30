@@ -1,4 +1,6 @@
 import React from 'react';
+import BoardHintCell from './BoardHintCell';
+import './index.css';
 
 export interface BoardHintsProps {
   direction: 'row' | 'column';
@@ -8,8 +10,13 @@ export interface BoardHintsProps {
 class BoardHints extends React.PureComponent<BoardHintsProps, {}> {
   render() {
     return (
-      <div>items</div>
+      <div className="boardHints">
+        {this.renderCells()}
+      </div>
     );
+  }
+  private renderCells() {
+    return this.props.hints.map(hint => <BoardHintCell hint={hint} />);
   }
 }
 
