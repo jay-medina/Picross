@@ -1,10 +1,6 @@
 import React from 'react';
 import './index.css';
-
-export enum CellState {
-  Selected = 'selected',
-  Crossed =  'crossed',
-}
+import { CellState } from './cellStateTransformer';
 
 export interface CellProps {
   state?: CellState;

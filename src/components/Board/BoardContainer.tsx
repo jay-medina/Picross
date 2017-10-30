@@ -1,6 +1,6 @@
 import React from 'react';
-import { CellState } from '../Cell';
-import Board, { CellStates } from './index';
+import Board from './index';
+import { CellStates, updateState } from '../Cell/cellStateTransformer';
 
 export interface BoardContainerProps {
   rows: number;
@@ -30,26 +30,15 @@ class BoardContainer extends React.PureComponent<BoardContainerProps, BoardConta
   }
 
   private onClick(row: number, column: number) {
-    const key = `${row} - ${column}`;
-
-    const newCellStates = {
-      ...this.state.cellStates,
-      [key]: this.toggleStates(
-        this.state.cellStates[key],
-      ),
-    };
+    const newCellStates = updateState(
+      this.state.cellStates,
+      row,
+      column,
+    );
 
     this.setState({
       cellStates: newCellStates,
     });
-  }
-
-  private toggleStates(state?: CellState) {
-    switch (state) {
-      case CellState.Selected: return CellState.Crossed;
-      case CellState.Crossed: return undefined;
-      default: return CellState.Selected;
-    }
   }
 
 }

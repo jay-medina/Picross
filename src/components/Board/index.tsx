@@ -1,5 +1,6 @@
 import React from 'react';
-import Cell, { CellProps, CellState } from '../Cell';
+import Cell, { CellProps } from '../Cell';
+import { getState, createKey, CellStates } from '../Cell/cellStateTransformer';
 import './index.css';
 
 export interface BoardProps {
@@ -7,10 +8,6 @@ export interface BoardProps {
   columns: number;
   onClick: (row: number, column: number) => void;
   cellStates: CellStates;
-}
-
-export interface CellStates {
-  [key: string]: (CellState | undefined);
 }
 
 class Board extends React.PureComponent<BoardProps, {}> {
@@ -42,16 +39,16 @@ class Board extends React.PureComponent<BoardProps, {}> {
     );
   }
 
-  private createCellArray(columns: number, rowIndex: number) {
+  private createCellArray(columns: number, row: number) {
     const cells: React.ReactElement<CellProps>[] = [];
-    for (let index = 0; index < columns; index += 1) {
-      const key = `${rowIndex} - ${index}`;
-      const state = this.props.cellStates[key];
+    for (let col = 0; col < columns; col += 1) {
+      const key = createKey(row, col);
+      const state = getState(this.props.cellStates, key);
       cells.push(
         <Cell 
           key={key} 
-          row={rowIndex} 
-          column={index} 
+          row={row} 
+          column={col} 
           onClick={this.props.onClick}
           state={state}
         />,

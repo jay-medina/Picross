@@ -1,6 +1,7 @@
 import { shallow, ShallowWrapper } from 'enzyme';
 import React from 'react';
-import Cell, { CellState } from '.';
+import Cell from '.';
+import { CellState } from './cellStateTransformer';
 
 describe('Cell', () => {
   let onClick: jest.Mock<{}>;
