@@ -1,0 +1,675 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Board /> when user creates 2x2 board display the board 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Board
+    cellStates={Object {}}
+    columns={2}
+    onClick={[Function]}
+    rows={2}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="row"
+        >
+          <Cell
+            column={0}
+            onClick={[Function]}
+            row={0}
+            state={undefined}
+          />
+          <Cell
+            column={1}
+            onClick={[Function]}
+            row={0}
+            state={undefined}
+          />
+        </div>,
+        <div
+          className="row"
+        >
+          <Cell
+            column={0}
+            onClick={[Function]}
+            row={1}
+            state={undefined}
+          />
+          <Cell
+            column={1}
+            onClick={[Function]}
+            row={1}
+            state={undefined}
+          />
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Cell
+              column={0}
+              onClick={[Function]}
+              row={0}
+              state={undefined}
+            />,
+            <Cell
+              column={1}
+              onClick={[Function]}
+              row={0}
+              state={undefined}
+            />,
+          ],
+          "className": "row",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0 - 0",
+            "nodeType": "class",
+            "props": Object {
+              "column": 0,
+              "onClick": [Function],
+              "row": 0,
+              "state": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "0 - 1",
+            "nodeType": "class",
+            "props": Object {
+              "column": 1,
+              "onClick": [Function],
+              "row": 0,
+              "state": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Cell
+              column={0}
+              onClick={[Function]}
+              row={1}
+              state={undefined}
+            />,
+            <Cell
+              column={1}
+              onClick={[Function]}
+              row={1}
+              state={undefined}
+            />,
+          ],
+          "className": "row",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "1 - 0",
+            "nodeType": "class",
+            "props": Object {
+              "column": 0,
+              "onClick": [Function],
+              "row": 1,
+              "state": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1 - 1",
+            "nodeType": "class",
+            "props": Object {
+              "column": 1,
+              "onClick": [Function],
+              "row": 1,
+              "state": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="row"
+          >
+            <Cell
+              column={0}
+              onClick={[Function]}
+              row={0}
+              state={undefined}
+            />
+            <Cell
+              column={1}
+              onClick={[Function]}
+              row={0}
+              state={undefined}
+            />
+          </div>,
+          <div
+            className="row"
+          >
+            <Cell
+              column={0}
+              onClick={[Function]}
+              row={1}
+              state={undefined}
+            />
+            <Cell
+              column={1}
+              onClick={[Function]}
+              row={1}
+              state={undefined}
+            />
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Cell
+                column={0}
+                onClick={[Function]}
+                row={0}
+                state={undefined}
+              />,
+              <Cell
+                column={1}
+                onClick={[Function]}
+                row={0}
+                state={undefined}
+              />,
+            ],
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0 - 0",
+              "nodeType": "class",
+              "props": Object {
+                "column": 0,
+                "onClick": [Function],
+                "row": 0,
+                "state": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "0 - 1",
+              "nodeType": "class",
+              "props": Object {
+                "column": 1,
+                "onClick": [Function],
+                "row": 0,
+                "state": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Cell
+                column={0}
+                onClick={[Function]}
+                row={1}
+                state={undefined}
+              />,
+              <Cell
+                column={1}
+                onClick={[Function]}
+                row={1}
+                state={undefined}
+              />,
+            ],
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "1 - 0",
+              "nodeType": "class",
+              "props": Object {
+                "column": 0,
+                "onClick": [Function],
+                "row": 1,
+                "state": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1 - 1",
+              "nodeType": "class",
+              "props": Object {
+                "column": 1,
+                "onClick": [Function],
+                "row": 1,
+                "state": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`<Board /> when user has a selected cell display the board with the cell selected 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Board
+    cellStates={
+      Object {
+        "1 - 1": "selected",
+      }
+    }
+    columns={2}
+    onClick={[Function]}
+    rows={2}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="row"
+        >
+          <Cell
+            column={0}
+            onClick={[Function]}
+            row={0}
+            state={undefined}
+          />
+          <Cell
+            column={1}
+            onClick={[Function]}
+            row={0}
+            state={undefined}
+          />
+        </div>,
+        <div
+          className="row"
+        >
+          <Cell
+            column={0}
+            onClick={[Function]}
+            row={1}
+            state={undefined}
+          />
+          <Cell
+            column={1}
+            onClick={[Function]}
+            row={1}
+            state="selected"
+          />
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Cell
+              column={0}
+              onClick={[Function]}
+              row={0}
+              state={undefined}
+            />,
+            <Cell
+              column={1}
+              onClick={[Function]}
+              row={0}
+              state={undefined}
+            />,
+          ],
+          "className": "row",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0 - 0",
+            "nodeType": "class",
+            "props": Object {
+              "column": 0,
+              "onClick": [Function],
+              "row": 0,
+              "state": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "0 - 1",
+            "nodeType": "class",
+            "props": Object {
+              "column": 1,
+              "onClick": [Function],
+              "row": 0,
+              "state": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Cell
+              column={0}
+              onClick={[Function]}
+              row={1}
+              state={undefined}
+            />,
+            <Cell
+              column={1}
+              onClick={[Function]}
+              row={1}
+              state="selected"
+            />,
+          ],
+          "className": "row",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "1 - 0",
+            "nodeType": "class",
+            "props": Object {
+              "column": 0,
+              "onClick": [Function],
+              "row": 1,
+              "state": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1 - 1",
+            "nodeType": "class",
+            "props": Object {
+              "column": 1,
+              "onClick": [Function],
+              "row": 1,
+              "state": "selected",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="row"
+          >
+            <Cell
+              column={0}
+              onClick={[Function]}
+              row={0}
+              state={undefined}
+            />
+            <Cell
+              column={1}
+              onClick={[Function]}
+              row={0}
+              state={undefined}
+            />
+          </div>,
+          <div
+            className="row"
+          >
+            <Cell
+              column={0}
+              onClick={[Function]}
+              row={1}
+              state={undefined}
+            />
+            <Cell
+              column={1}
+              onClick={[Function]}
+              row={1}
+              state="selected"
+            />
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Cell
+                column={0}
+                onClick={[Function]}
+                row={0}
+                state={undefined}
+              />,
+              <Cell
+                column={1}
+                onClick={[Function]}
+                row={0}
+                state={undefined}
+              />,
+            ],
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0 - 0",
+              "nodeType": "class",
+              "props": Object {
+                "column": 0,
+                "onClick": [Function],
+                "row": 0,
+                "state": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "0 - 1",
+              "nodeType": "class",
+              "props": Object {
+                "column": 1,
+                "onClick": [Function],
+                "row": 0,
+                "state": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Cell
+                column={0}
+                onClick={[Function]}
+                row={1}
+                state={undefined}
+              />,
+              <Cell
+                column={1}
+                onClick={[Function]}
+                row={1}
+                state="selected"
+              />,
+            ],
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "1 - 0",
+              "nodeType": "class",
+              "props": Object {
+                "column": 0,
+                "onClick": [Function],
+                "row": 1,
+                "state": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1 - 1",
+              "nodeType": "class",
+              "props": Object {
+                "column": 1,
+                "onClick": [Function],
+                "row": 1,
+                "state": "selected",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

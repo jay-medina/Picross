@@ -1,26 +1,37 @@
 import React from 'react';
 import './index.css';
+import { CellState } from './cellStateTransformer';
 
-interface CellProps {
-  state?: 'selected' | 'crossed';
+export interface CellProps {
+  state?: CellState;
+  row: number;
+  column: number;
+  onClick: (row: number, column: number) => void;
 }
 
-const Cell: React.StatelessComponent<CellProps> = ({ state }) => {
-  if (state === 'crossed') {
+class Cell extends React.PureComponent<CellProps, {}> {
+  constructor() {
+    super();
+    this.onClick = this.onClick.bind(this);
+  }
+  render() {
     return (
-      <div className="cell">
-        <div className="cross">&times;</div>
-      </div>
-    );
-  } else if (state === 'selected') {
-    return (
-      <div className="cell">
-        <div className="selected" />
+      <div className="cell" onClick={this.onClick}>
+        {this.getChildElement()}
       </div>
     );
   }
-
-  return <div className="cell" />;
-};
+  private getChildElement() {
+    const { state } = this.props;
+    switch (state) {
+      case 'crossed': return <div className="cross">&times;</div>;
+      case 'selected': return <div className="selected" />;
+      default: return null;
+    }
+  }
+  private onClick() {
+    this.props.onClick(this.props.row, this.props.column);
+  }
+}
 
 export default Cell;
