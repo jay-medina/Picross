@@ -24,10 +24,10 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <div
-          className="row"
+          className="columns"
         >
           <BoardHints
-            direction="row"
+            direction="column"
             hints={
               Array [
                 1,
@@ -36,49 +36,133 @@ ShallowWrapper {
               ]
             }
           />
-          <Cell
-            column={0}
-            onClick={[Function]}
-            row={0}
-            state={undefined}
-          />
-          <Cell
-            column={1}
-            onClick={[Function]}
-            row={0}
-            state={undefined}
-          />
-        </div>,
-        <div
-          className="row"
-        >
           <BoardHints
-            direction="row"
+            direction="column"
             hints={
               Array [
-                1,
-                2,
-                3,
+                0,
               ]
             }
           />
-          <Cell
-            column={0}
-            onClick={[Function]}
-            row={1}
-            state={undefined}
-          />
-          <Cell
-            column={1}
-            onClick={[Function]}
-            row={1}
-            state={undefined}
-          />
         </div>,
+        Array [
+          <div
+            className="row"
+          >
+            <BoardHints
+              direction="row"
+              hints={
+                Array [
+                  1,
+                  2,
+                  3,
+                ]
+              }
+            />
+            <Cell
+              column={0}
+              onClick={[Function]}
+              row={0}
+              state={undefined}
+            />
+            <Cell
+              column={1}
+              onClick={[Function]}
+              row={0}
+              state={undefined}
+            />
+          </div>,
+          <div
+            className="row"
+          >
+            <BoardHints
+              direction="row"
+              hints={
+                Array [
+                  0,
+                ]
+              }
+            />
+            <Cell
+              column={0}
+              onClick={[Function]}
+              row={1}
+              state={undefined}
+            />
+            <Cell
+              column={1}
+              onClick={[Function]}
+              row={1}
+              state={undefined}
+            />
+          </div>,
+        ],
       ],
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <BoardHints
+              direction="column"
+              hints={
+                Array [
+                  1,
+                  2,
+                  3,
+                ]
+              }
+            />,
+            <BoardHints
+              direction="column"
+              hints={
+                Array [
+                  0,
+                ]
+              }
+            />,
+          ],
+          "className": "columns",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "function",
+            "props": Object {
+              "direction": "column",
+              "hints": Array [
+                1,
+                2,
+                3,
+              ],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "function",
+            "props": Object {
+              "direction": "column",
+              "hints": Array [
+                0,
+              ],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
       Object {
         "instance": null,
         "key": "0",
@@ -117,7 +201,7 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": null,
-            "nodeType": "class",
+            "nodeType": "function",
             "props": Object {
               "direction": "row",
               "hints": Array [
@@ -171,9 +255,7 @@ ShallowWrapper {
               direction="row"
               hints={
                 Array [
-                  1,
-                  2,
-                  3,
+                  0,
                 ]
               }
             />,
@@ -199,13 +281,11 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": null,
-            "nodeType": "class",
+            "nodeType": "function",
             "props": Object {
               "direction": "row",
               "hints": Array [
-                1,
-                2,
-                3,
+                0,
               ],
             },
             "ref": null,
@@ -254,10 +334,10 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <div
-            className="row"
+            className="columns"
           >
             <BoardHints
-              direction="row"
+              direction="column"
               hints={
                 Array [
                   1,
@@ -266,49 +346,133 @@ ShallowWrapper {
                 ]
               }
             />
-            <Cell
-              column={0}
-              onClick={[Function]}
-              row={0}
-              state={undefined}
-            />
-            <Cell
-              column={1}
-              onClick={[Function]}
-              row={0}
-              state={undefined}
-            />
-          </div>,
-          <div
-            className="row"
-          >
             <BoardHints
-              direction="row"
+              direction="column"
               hints={
                 Array [
-                  1,
-                  2,
-                  3,
+                  0,
                 ]
               }
             />
-            <Cell
-              column={0}
-              onClick={[Function]}
-              row={1}
-              state={undefined}
-            />
-            <Cell
-              column={1}
-              onClick={[Function]}
-              row={1}
-              state={undefined}
-            />
           </div>,
+          Array [
+            <div
+              className="row"
+            >
+              <BoardHints
+                direction="row"
+                hints={
+                  Array [
+                    1,
+                    2,
+                    3,
+                  ]
+                }
+              />
+              <Cell
+                column={0}
+                onClick={[Function]}
+                row={0}
+                state={undefined}
+              />
+              <Cell
+                column={1}
+                onClick={[Function]}
+                row={0}
+                state={undefined}
+              />
+            </div>,
+            <div
+              className="row"
+            >
+              <BoardHints
+                direction="row"
+                hints={
+                  Array [
+                    0,
+                  ]
+                }
+              />
+              <Cell
+                column={0}
+                onClick={[Function]}
+                row={1}
+                state={undefined}
+              />
+              <Cell
+                column={1}
+                onClick={[Function]}
+                row={1}
+                state={undefined}
+              />
+            </div>,
+          ],
         ],
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <BoardHints
+                direction="column"
+                hints={
+                  Array [
+                    1,
+                    2,
+                    3,
+                  ]
+                }
+              />,
+              <BoardHints
+                direction="column"
+                hints={
+                  Array [
+                    0,
+                  ]
+                }
+              />,
+            ],
+            "className": "columns",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "function",
+              "props": Object {
+                "direction": "column",
+                "hints": Array [
+                  1,
+                  2,
+                  3,
+                ],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "function",
+              "props": Object {
+                "direction": "column",
+                "hints": Array [
+                  0,
+                ],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
         Object {
           "instance": null,
           "key": "0",
@@ -347,7 +511,7 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": null,
-              "nodeType": "class",
+              "nodeType": "function",
               "props": Object {
                 "direction": "row",
                 "hints": Array [
@@ -401,9 +565,7 @@ ShallowWrapper {
                 direction="row"
                 hints={
                   Array [
-                    1,
-                    2,
-                    3,
+                    0,
                   ]
                 }
               />,
@@ -429,13 +591,11 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": null,
-              "nodeType": "class",
+              "nodeType": "function",
               "props": Object {
                 "direction": "row",
                 "hints": Array [
-                  1,
-                  2,
-                  3,
+                  0,
                 ],
               },
               "ref": null,
@@ -515,10 +675,10 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <div
-          className="row"
+          className="columns"
         >
           <BoardHints
-            direction="row"
+            direction="column"
             hints={
               Array [
                 1,
@@ -527,49 +687,133 @@ ShallowWrapper {
               ]
             }
           />
-          <Cell
-            column={0}
-            onClick={[Function]}
-            row={0}
-            state={undefined}
-          />
-          <Cell
-            column={1}
-            onClick={[Function]}
-            row={0}
-            state={undefined}
-          />
-        </div>,
-        <div
-          className="row"
-        >
           <BoardHints
-            direction="row"
+            direction="column"
             hints={
               Array [
-                1,
-                2,
-                3,
+                0,
               ]
             }
           />
-          <Cell
-            column={0}
-            onClick={[Function]}
-            row={1}
-            state={undefined}
-          />
-          <Cell
-            column={1}
-            onClick={[Function]}
-            row={1}
-            state="selected"
-          />
         </div>,
+        Array [
+          <div
+            className="row"
+          >
+            <BoardHints
+              direction="row"
+              hints={
+                Array [
+                  1,
+                  2,
+                  3,
+                ]
+              }
+            />
+            <Cell
+              column={0}
+              onClick={[Function]}
+              row={0}
+              state={undefined}
+            />
+            <Cell
+              column={1}
+              onClick={[Function]}
+              row={0}
+              state={undefined}
+            />
+          </div>,
+          <div
+            className="row"
+          >
+            <BoardHints
+              direction="row"
+              hints={
+                Array [
+                  0,
+                ]
+              }
+            />
+            <Cell
+              column={0}
+              onClick={[Function]}
+              row={1}
+              state={undefined}
+            />
+            <Cell
+              column={1}
+              onClick={[Function]}
+              row={1}
+              state="selected"
+            />
+          </div>,
+        ],
       ],
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <BoardHints
+              direction="column"
+              hints={
+                Array [
+                  1,
+                  2,
+                  3,
+                ]
+              }
+            />,
+            <BoardHints
+              direction="column"
+              hints={
+                Array [
+                  0,
+                ]
+              }
+            />,
+          ],
+          "className": "columns",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "function",
+            "props": Object {
+              "direction": "column",
+              "hints": Array [
+                1,
+                2,
+                3,
+              ],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "function",
+            "props": Object {
+              "direction": "column",
+              "hints": Array [
+                0,
+              ],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
       Object {
         "instance": null,
         "key": "0",
@@ -608,7 +852,7 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": null,
-            "nodeType": "class",
+            "nodeType": "function",
             "props": Object {
               "direction": "row",
               "hints": Array [
@@ -662,9 +906,7 @@ ShallowWrapper {
               direction="row"
               hints={
                 Array [
-                  1,
-                  2,
-                  3,
+                  0,
                 ]
               }
             />,
@@ -690,13 +932,11 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": null,
-            "nodeType": "class",
+            "nodeType": "function",
             "props": Object {
               "direction": "row",
               "hints": Array [
-                1,
-                2,
-                3,
+                0,
               ],
             },
             "ref": null,
@@ -745,10 +985,10 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <div
-            className="row"
+            className="columns"
           >
             <BoardHints
-              direction="row"
+              direction="column"
               hints={
                 Array [
                   1,
@@ -757,49 +997,133 @@ ShallowWrapper {
                 ]
               }
             />
-            <Cell
-              column={0}
-              onClick={[Function]}
-              row={0}
-              state={undefined}
-            />
-            <Cell
-              column={1}
-              onClick={[Function]}
-              row={0}
-              state={undefined}
-            />
-          </div>,
-          <div
-            className="row"
-          >
             <BoardHints
-              direction="row"
+              direction="column"
               hints={
                 Array [
-                  1,
-                  2,
-                  3,
+                  0,
                 ]
               }
             />
-            <Cell
-              column={0}
-              onClick={[Function]}
-              row={1}
-              state={undefined}
-            />
-            <Cell
-              column={1}
-              onClick={[Function]}
-              row={1}
-              state="selected"
-            />
           </div>,
+          Array [
+            <div
+              className="row"
+            >
+              <BoardHints
+                direction="row"
+                hints={
+                  Array [
+                    1,
+                    2,
+                    3,
+                  ]
+                }
+              />
+              <Cell
+                column={0}
+                onClick={[Function]}
+                row={0}
+                state={undefined}
+              />
+              <Cell
+                column={1}
+                onClick={[Function]}
+                row={0}
+                state={undefined}
+              />
+            </div>,
+            <div
+              className="row"
+            >
+              <BoardHints
+                direction="row"
+                hints={
+                  Array [
+                    0,
+                  ]
+                }
+              />
+              <Cell
+                column={0}
+                onClick={[Function]}
+                row={1}
+                state={undefined}
+              />
+              <Cell
+                column={1}
+                onClick={[Function]}
+                row={1}
+                state="selected"
+              />
+            </div>,
+          ],
         ],
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <BoardHints
+                direction="column"
+                hints={
+                  Array [
+                    1,
+                    2,
+                    3,
+                  ]
+                }
+              />,
+              <BoardHints
+                direction="column"
+                hints={
+                  Array [
+                    0,
+                  ]
+                }
+              />,
+            ],
+            "className": "columns",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "function",
+              "props": Object {
+                "direction": "column",
+                "hints": Array [
+                  1,
+                  2,
+                  3,
+                ],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "function",
+              "props": Object {
+                "direction": "column",
+                "hints": Array [
+                  0,
+                ],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
         Object {
           "instance": null,
           "key": "0",
@@ -838,7 +1162,7 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": null,
-              "nodeType": "class",
+              "nodeType": "function",
               "props": Object {
                 "direction": "row",
                 "hints": Array [
@@ -892,9 +1216,7 @@ ShallowWrapper {
                 direction="row"
                 hints={
                   Array [
-                    1,
-                    2,
-                    3,
+                    0,
                   ]
                 }
               />,
@@ -920,13 +1242,11 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": null,
-              "nodeType": "class",
+              "nodeType": "function",
               "props": Object {
                 "direction": "row",
                 "hints": Array [
-                  1,
-                  2,
-                  3,
+                  0,
                 ],
               },
               "ref": null,

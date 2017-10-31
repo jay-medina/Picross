@@ -17,4 +17,17 @@ describe('<BoardHints />', () => {
       expect(wrapper).toMatchSnapshot();
     });
   });
+
+  describe('when rendering a column of board hints', () => {
+    beforeEach(() => {
+      wrapper = shallow(
+        <BoardHints direction="column" hints={[1, 2, 3]} />,
+      );
+
+    });
+
+    it('renders the cells', () => {
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
 });
