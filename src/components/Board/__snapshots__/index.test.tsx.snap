@@ -26,6 +26,16 @@ ShallowWrapper {
         <div
           className="row"
         >
+          <BoardHints
+            direction="row"
+            hints={
+              Array [
+                1,
+                2,
+                3,
+              ]
+            }
+          />
           <Cell
             column={0}
             onClick={[Function]}
@@ -42,6 +52,16 @@ ShallowWrapper {
         <div
           className="row"
         >
+          <BoardHints
+            direction="row"
+            hints={
+              Array [
+                1,
+                2,
+                3,
+              ]
+            }
+          />
           <Cell
             column={0}
             onClick={[Function]}
@@ -65,23 +85,51 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <Cell
-              column={0}
-              onClick={[Function]}
-              row={0}
-              state={undefined}
+            <BoardHints
+              direction="row"
+              hints={
+                Array [
+                  1,
+                  2,
+                  3,
+                ]
+              }
             />,
-            <Cell
-              column={1}
-              onClick={[Function]}
-              row={0}
-              state={undefined}
-            />,
+            Array [
+              <Cell
+                column={0}
+                onClick={[Function]}
+                row={0}
+                state={undefined}
+              />,
+              <Cell
+                column={1}
+                onClick={[Function]}
+                row={0}
+                state={undefined}
+              />,
+            ],
           ],
           "className": "row",
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "class",
+            "props": Object {
+              "direction": "row",
+              "hints": Array [
+                1,
+                2,
+                3,
+              ],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           Object {
             "instance": null,
             "key": "0 - 0",
@@ -119,23 +167,51 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <Cell
-              column={0}
-              onClick={[Function]}
-              row={1}
-              state={undefined}
+            <BoardHints
+              direction="row"
+              hints={
+                Array [
+                  1,
+                  2,
+                  3,
+                ]
+              }
             />,
-            <Cell
-              column={1}
-              onClick={[Function]}
-              row={1}
-              state={undefined}
-            />,
+            Array [
+              <Cell
+                column={0}
+                onClick={[Function]}
+                row={1}
+                state={undefined}
+              />,
+              <Cell
+                column={1}
+                onClick={[Function]}
+                row={1}
+                state={undefined}
+              />,
+            ],
           ],
           "className": "row",
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "class",
+            "props": Object {
+              "direction": "row",
+              "hints": Array [
+                1,
+                2,
+                3,
+              ],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           Object {
             "instance": null,
             "key": "1 - 0",
@@ -180,6 +256,16 @@ ShallowWrapper {
           <div
             className="row"
           >
+            <BoardHints
+              direction="row"
+              hints={
+                Array [
+                  1,
+                  2,
+                  3,
+                ]
+              }
+            />
             <Cell
               column={0}
               onClick={[Function]}
@@ -196,6 +282,16 @@ ShallowWrapper {
           <div
             className="row"
           >
+            <BoardHints
+              direction="row"
+              hints={
+                Array [
+                  1,
+                  2,
+                  3,
+                ]
+              }
+            />
             <Cell
               column={0}
               onClick={[Function]}
@@ -219,23 +315,51 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <Cell
-                column={0}
-                onClick={[Function]}
-                row={0}
-                state={undefined}
+              <BoardHints
+                direction="row"
+                hints={
+                  Array [
+                    1,
+                    2,
+                    3,
+                  ]
+                }
               />,
-              <Cell
-                column={1}
-                onClick={[Function]}
-                row={0}
-                state={undefined}
-              />,
+              Array [
+                <Cell
+                  column={0}
+                  onClick={[Function]}
+                  row={0}
+                  state={undefined}
+                />,
+                <Cell
+                  column={1}
+                  onClick={[Function]}
+                  row={0}
+                  state={undefined}
+                />,
+              ],
             ],
             "className": "row",
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "direction": "row",
+                "hints": Array [
+                  1,
+                  2,
+                  3,
+                ],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             Object {
               "instance": null,
               "key": "0 - 0",
@@ -273,23 +397,51 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <Cell
-                column={0}
-                onClick={[Function]}
-                row={1}
-                state={undefined}
+              <BoardHints
+                direction="row"
+                hints={
+                  Array [
+                    1,
+                    2,
+                    3,
+                  ]
+                }
               />,
-              <Cell
-                column={1}
-                onClick={[Function]}
-                row={1}
-                state={undefined}
-              />,
+              Array [
+                <Cell
+                  column={0}
+                  onClick={[Function]}
+                  row={1}
+                  state={undefined}
+                />,
+                <Cell
+                  column={1}
+                  onClick={[Function]}
+                  row={1}
+                  state={undefined}
+                />,
+              ],
             ],
             "className": "row",
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "direction": "row",
+                "hints": Array [
+                  1,
+                  2,
+                  3,
+                ],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             Object {
               "instance": null,
               "key": "1 - 0",
@@ -365,6 +517,16 @@ ShallowWrapper {
         <div
           className="row"
         >
+          <BoardHints
+            direction="row"
+            hints={
+              Array [
+                1,
+                2,
+                3,
+              ]
+            }
+          />
           <Cell
             column={0}
             onClick={[Function]}
@@ -381,6 +543,16 @@ ShallowWrapper {
         <div
           className="row"
         >
+          <BoardHints
+            direction="row"
+            hints={
+              Array [
+                1,
+                2,
+                3,
+              ]
+            }
+          />
           <Cell
             column={0}
             onClick={[Function]}
@@ -404,23 +576,51 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <Cell
-              column={0}
-              onClick={[Function]}
-              row={0}
-              state={undefined}
+            <BoardHints
+              direction="row"
+              hints={
+                Array [
+                  1,
+                  2,
+                  3,
+                ]
+              }
             />,
-            <Cell
-              column={1}
-              onClick={[Function]}
-              row={0}
-              state={undefined}
-            />,
+            Array [
+              <Cell
+                column={0}
+                onClick={[Function]}
+                row={0}
+                state={undefined}
+              />,
+              <Cell
+                column={1}
+                onClick={[Function]}
+                row={0}
+                state={undefined}
+              />,
+            ],
           ],
           "className": "row",
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "class",
+            "props": Object {
+              "direction": "row",
+              "hints": Array [
+                1,
+                2,
+                3,
+              ],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           Object {
             "instance": null,
             "key": "0 - 0",
@@ -458,23 +658,51 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <Cell
-              column={0}
-              onClick={[Function]}
-              row={1}
-              state={undefined}
+            <BoardHints
+              direction="row"
+              hints={
+                Array [
+                  1,
+                  2,
+                  3,
+                ]
+              }
             />,
-            <Cell
-              column={1}
-              onClick={[Function]}
-              row={1}
-              state="selected"
-            />,
+            Array [
+              <Cell
+                column={0}
+                onClick={[Function]}
+                row={1}
+                state={undefined}
+              />,
+              <Cell
+                column={1}
+                onClick={[Function]}
+                row={1}
+                state="selected"
+              />,
+            ],
           ],
           "className": "row",
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "class",
+            "props": Object {
+              "direction": "row",
+              "hints": Array [
+                1,
+                2,
+                3,
+              ],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           Object {
             "instance": null,
             "key": "1 - 0",
@@ -519,6 +747,16 @@ ShallowWrapper {
           <div
             className="row"
           >
+            <BoardHints
+              direction="row"
+              hints={
+                Array [
+                  1,
+                  2,
+                  3,
+                ]
+              }
+            />
             <Cell
               column={0}
               onClick={[Function]}
@@ -535,6 +773,16 @@ ShallowWrapper {
           <div
             className="row"
           >
+            <BoardHints
+              direction="row"
+              hints={
+                Array [
+                  1,
+                  2,
+                  3,
+                ]
+              }
+            />
             <Cell
               column={0}
               onClick={[Function]}
@@ -558,23 +806,51 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <Cell
-                column={0}
-                onClick={[Function]}
-                row={0}
-                state={undefined}
+              <BoardHints
+                direction="row"
+                hints={
+                  Array [
+                    1,
+                    2,
+                    3,
+                  ]
+                }
               />,
-              <Cell
-                column={1}
-                onClick={[Function]}
-                row={0}
-                state={undefined}
-              />,
+              Array [
+                <Cell
+                  column={0}
+                  onClick={[Function]}
+                  row={0}
+                  state={undefined}
+                />,
+                <Cell
+                  column={1}
+                  onClick={[Function]}
+                  row={0}
+                  state={undefined}
+                />,
+              ],
             ],
             "className": "row",
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "direction": "row",
+                "hints": Array [
+                  1,
+                  2,
+                  3,
+                ],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             Object {
               "instance": null,
               "key": "0 - 0",
@@ -612,23 +888,51 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <Cell
-                column={0}
-                onClick={[Function]}
-                row={1}
-                state={undefined}
+              <BoardHints
+                direction="row"
+                hints={
+                  Array [
+                    1,
+                    2,
+                    3,
+                  ]
+                }
               />,
-              <Cell
-                column={1}
-                onClick={[Function]}
-                row={1}
-                state="selected"
-              />,
+              Array [
+                <Cell
+                  column={0}
+                  onClick={[Function]}
+                  row={1}
+                  state={undefined}
+                />,
+                <Cell
+                  column={1}
+                  onClick={[Function]}
+                  row={1}
+                  state="selected"
+                />,
+              ],
             ],
             "className": "row",
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "class",
+              "props": Object {
+                "direction": "row",
+                "hints": Array [
+                  1,
+                  2,
+                  3,
+                ],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             Object {
               "instance": null,
               "key": "1 - 0",

@@ -16,7 +16,7 @@ class BoardHints extends React.PureComponent<BoardHintsProps, {}> {
     );
   }
   private renderCells() {
-    return this.props.hints.map(hint => <BoardHintCell hint={hint} />);
+    return this.props.hints.map((hint, key) => <BoardHintCell hint={hint} key={key} />);
   }
 }
 
