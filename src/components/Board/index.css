@@ -1,3 +1,10 @@
 .row {
   display: flex;
+  justify-content: flex-end;
+}
+
+.columns {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }

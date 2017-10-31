@@ -7,17 +7,20 @@ export interface BoardHintsProps {
   hints: number[];
 }
 
-class BoardHints extends React.PureComponent<BoardHintsProps, {}> {
-  render() {
-    return (
-      <div className="boardHints">
-        {this.renderCells()}
-      </div>
-    );
+const getClassName = ({ direction }: BoardHintsProps) => {
+  if (direction === 'column') {
+    return 'boardHints column';
   }
-  private renderCells() {
-    return this.props.hints.map((hint, key) => <BoardHintCell hint={hint} key={key} />);
-  }
-}
+  return 'boardHints';
+};
+
+const renderCells = ({ hints }: BoardHintsProps) =>
+  hints.map((hint, key) => <BoardHintCell hint={hint} key={key} />);
+
+const BoardHints = (props: BoardHintsProps) => (
+  <div className={getClassName(props)}>
+    {renderCells(props)}
+  </div>
+);
 
 export default BoardHints;

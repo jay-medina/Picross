@@ -1,3 +1,7 @@
 .boardHints {
   display:flex;
 }
+
+.boardHints.column {
+  flex-direction: column;
+}
