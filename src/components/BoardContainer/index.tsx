@@ -1,10 +1,12 @@
 import React from 'react';
-import Board from './index';
+import Board from '../Board';
 import { CellStates, updateState } from '../Cell/cellStateTransformer';
 
 export interface BoardContainerProps {
   rows: number;
   columns: number;
+  rowHints: number[][];
+  columnHints: number[][];
 }
 
 
@@ -22,8 +24,8 @@ class BoardContainer extends React.PureComponent<BoardContainerProps, BoardConta
   }
 
   render() {
-    return <Board 
-      {...this.props} 
+    return <Board
+      {...this.props}
       onClick={this.onClick}
       cellStates={this.state.cellStates}
     />;

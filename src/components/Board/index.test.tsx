@@ -5,11 +5,19 @@ import { CellState } from '../Cell/cellStateTransformer';
 
 describe('<Board />', () => {
   let wrapper: ShallowWrapper;
+  const rowHints = [] as number[][];
+  const colHints = [] as number[][];
 
   describe('when user creates 2x2 board', () => {
     beforeEach(() => {
       wrapper = shallow(
-        <Board rows={2} columns={2} onClick={jest.fn()} cellStates={{}}/>,
+        <Board
+          rows={2}
+          columns={2}
+          onClick={jest.fn()}
+          cellStates={{}}
+          rowHints={rowHints}
+          columnHints={colHints} />,
       );
     });
 
@@ -24,7 +32,13 @@ describe('<Board />', () => {
         '1 - 1': CellState.Selected,
       };
       wrapper = shallow(
-        <Board rows={2} columns={2} onClick={jest.fn()} cellStates={cellStates}/>,
+        <Board
+          rows={2}
+          columns={2}
+          onClick={jest.fn()}
+          cellStates={cellStates}
+          rowHints={rowHints}
+          columnHints={colHints} />,
       );
     });
 
@@ -43,7 +57,13 @@ describe('<Board />', () => {
         '1 - 1': CellState.Selected,
       };
       wrapper = shallow(
-        <Board rows={2} columns={2} onClick={onClick} cellStates={cellStates}/>,
+        <Board
+          rows={2}
+          columns={2}
+          onClick={onClick}
+          cellStates={cellStates}
+          rowHints={rowHints}
+          columnHints={colHints} />,
       );
 
       wrapper.find('Cell').at(1).simulate('click', 0, 1);
