@@ -10,15 +10,9 @@ export interface BoardProps {
   columns: number;
   onClick: (row: number, column: number) => void;
   cellStates: CellStates;
+  rowHints: number[][];
+  columnHints: number[][];
 }
-
-const hints = [
-  [1, 2, 3],
-  [0],
-  [4, 5, 6],
-  [1, 1],
-  [0],
-];
 
 class Board extends React.PureComponent<BoardProps, {}> {
   render() {
@@ -32,9 +26,10 @@ class Board extends React.PureComponent<BoardProps, {}> {
     );
   }
   private createColumns() {
+    const { columnHints } = this.props;
     return Range(0, this.props.columns).map(
       (value: number, key: number) =>
-        <BoardHints direction="column" key={key} hints={hints[value]} />,
+        <BoardHints direction="column" key={key} hints={columnHints[value]} />,
     ).toArray();
   }
 
@@ -47,10 +42,10 @@ class Board extends React.PureComponent<BoardProps, {}> {
   }
 
   private createRow(rowIndex: number) {
-    const { columns } = this.props;
+    const { columns, rowHints } = this.props;
     return (
       <div key={rowIndex} className="row">
-        <BoardHints direction="row" hints={hints[rowIndex]} />
+        <BoardHints direction="row" hints={rowHints[rowIndex]} />
         {this.createCellArray(columns, rowIndex)}
       </div>
     );

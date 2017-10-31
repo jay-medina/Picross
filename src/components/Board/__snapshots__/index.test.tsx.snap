@@ -6,8 +6,10 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Board
     cellStates={Object {}}
+    columnHints={Array []}
     columns={2}
     onClick={[Function]}
+    rowHints={Array []}
     rows={2}
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -28,21 +30,11 @@ ShallowWrapper {
         >
           <BoardHints
             direction="column"
-            hints={
-              Array [
-                1,
-                2,
-                3,
-              ]
-            }
+            hints={undefined}
           />
           <BoardHints
             direction="column"
-            hints={
-              Array [
-                0,
-              ]
-            }
+            hints={undefined}
           />
         </div>,
         Array [
@@ -51,13 +43,7 @@ ShallowWrapper {
           >
             <BoardHints
               direction="row"
-              hints={
-                Array [
-                  1,
-                  2,
-                  3,
-                ]
-              }
+              hints={undefined}
             />
             <Cell
               column={0}
@@ -77,11 +63,7 @@ ShallowWrapper {
           >
             <BoardHints
               direction="row"
-              hints={
-                Array [
-                  0,
-                ]
-              }
+              hints={undefined}
             />
             <Cell
               column={0}
@@ -109,21 +91,11 @@ ShallowWrapper {
           "children": Array [
             <BoardHints
               direction="column"
-              hints={
-                Array [
-                  1,
-                  2,
-                  3,
-                ]
-              }
+              hints={undefined}
             />,
             <BoardHints
               direction="column"
-              hints={
-                Array [
-                  0,
-                ]
-              }
+              hints={undefined}
             />,
           ],
           "className": "columns",
@@ -136,11 +108,7 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "direction": "column",
-              "hints": Array [
-                1,
-                2,
-                3,
-              ],
+              "hints": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -152,9 +120,7 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "direction": "column",
-              "hints": Array [
-                0,
-              ],
+              "hints": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -171,13 +137,7 @@ ShallowWrapper {
           "children": Array [
             <BoardHints
               direction="row"
-              hints={
-                Array [
-                  1,
-                  2,
-                  3,
-                ]
-              }
+              hints={undefined}
             />,
             Array [
               <Cell
@@ -204,11 +164,7 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "direction": "row",
-              "hints": Array [
-                1,
-                2,
-                3,
-              ],
+              "hints": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -253,11 +209,7 @@ ShallowWrapper {
           "children": Array [
             <BoardHints
               direction="row"
-              hints={
-                Array [
-                  0,
-                ]
-              }
+              hints={undefined}
             />,
             Array [
               <Cell
@@ -284,9 +236,7 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "direction": "row",
-              "hints": Array [
-                0,
-              ],
+              "hints": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -338,21 +288,11 @@ ShallowWrapper {
           >
             <BoardHints
               direction="column"
-              hints={
-                Array [
-                  1,
-                  2,
-                  3,
-                ]
-              }
+              hints={undefined}
             />
             <BoardHints
               direction="column"
-              hints={
-                Array [
-                  0,
-                ]
-              }
+              hints={undefined}
             />
           </div>,
           Array [
@@ -361,13 +301,7 @@ ShallowWrapper {
             >
               <BoardHints
                 direction="row"
-                hints={
-                  Array [
-                    1,
-                    2,
-                    3,
-                  ]
-                }
+                hints={undefined}
               />
               <Cell
                 column={0}
@@ -387,11 +321,7 @@ ShallowWrapper {
             >
               <BoardHints
                 direction="row"
-                hints={
-                  Array [
-                    0,
-                  ]
-                }
+                hints={undefined}
               />
               <Cell
                 column={0}
@@ -419,21 +349,11 @@ ShallowWrapper {
             "children": Array [
               <BoardHints
                 direction="column"
-                hints={
-                  Array [
-                    1,
-                    2,
-                    3,
-                  ]
-                }
+                hints={undefined}
               />,
               <BoardHints
                 direction="column"
-                hints={
-                  Array [
-                    0,
-                  ]
-                }
+                hints={undefined}
               />,
             ],
             "className": "columns",
@@ -446,11 +366,7 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "direction": "column",
-                "hints": Array [
-                  1,
-                  2,
-                  3,
-                ],
+                "hints": undefined,
               },
               "ref": null,
               "rendered": null,
@@ -462,9 +378,7 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "direction": "column",
-                "hints": Array [
-                  0,
-                ],
+                "hints": undefined,
               },
               "ref": null,
               "rendered": null,
@@ -481,13 +395,7 @@ ShallowWrapper {
             "children": Array [
               <BoardHints
                 direction="row"
-                hints={
-                  Array [
-                    1,
-                    2,
-                    3,
-                  ]
-                }
+                hints={undefined}
               />,
               Array [
                 <Cell
@@ -514,11 +422,7 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "direction": "row",
-                "hints": Array [
-                  1,
-                  2,
-                  3,
-                ],
+                "hints": undefined,
               },
               "ref": null,
               "rendered": null,
@@ -563,11 +467,7 @@ ShallowWrapper {
             "children": Array [
               <BoardHints
                 direction="row"
-                hints={
-                  Array [
-                    0,
-                  ]
-                }
+                hints={undefined}
               />,
               Array [
                 <Cell
@@ -594,9 +494,7 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "direction": "row",
-                "hints": Array [
-                  0,
-                ],
+                "hints": undefined,
               },
               "ref": null,
               "rendered": null,
@@ -657,8 +555,10 @@ ShallowWrapper {
         "1 - 1": "selected",
       }
     }
+    columnHints={Array []}
     columns={2}
     onClick={[Function]}
+    rowHints={Array []}
     rows={2}
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -679,21 +579,11 @@ ShallowWrapper {
         >
           <BoardHints
             direction="column"
-            hints={
-              Array [
-                1,
-                2,
-                3,
-              ]
-            }
+            hints={undefined}
           />
           <BoardHints
             direction="column"
-            hints={
-              Array [
-                0,
-              ]
-            }
+            hints={undefined}
           />
         </div>,
         Array [
@@ -702,13 +592,7 @@ ShallowWrapper {
           >
             <BoardHints
               direction="row"
-              hints={
-                Array [
-                  1,
-                  2,
-                  3,
-                ]
-              }
+              hints={undefined}
             />
             <Cell
               column={0}
@@ -728,11 +612,7 @@ ShallowWrapper {
           >
             <BoardHints
               direction="row"
-              hints={
-                Array [
-                  0,
-                ]
-              }
+              hints={undefined}
             />
             <Cell
               column={0}
@@ -760,21 +640,11 @@ ShallowWrapper {
           "children": Array [
             <BoardHints
               direction="column"
-              hints={
-                Array [
-                  1,
-                  2,
-                  3,
-                ]
-              }
+              hints={undefined}
             />,
             <BoardHints
               direction="column"
-              hints={
-                Array [
-                  0,
-                ]
-              }
+              hints={undefined}
             />,
           ],
           "className": "columns",
@@ -787,11 +657,7 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "direction": "column",
-              "hints": Array [
-                1,
-                2,
-                3,
-              ],
+              "hints": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -803,9 +669,7 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "direction": "column",
-              "hints": Array [
-                0,
-              ],
+              "hints": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -822,13 +686,7 @@ ShallowWrapper {
           "children": Array [
             <BoardHints
               direction="row"
-              hints={
-                Array [
-                  1,
-                  2,
-                  3,
-                ]
-              }
+              hints={undefined}
             />,
             Array [
               <Cell
@@ -855,11 +713,7 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "direction": "row",
-              "hints": Array [
-                1,
-                2,
-                3,
-              ],
+              "hints": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -904,11 +758,7 @@ ShallowWrapper {
           "children": Array [
             <BoardHints
               direction="row"
-              hints={
-                Array [
-                  0,
-                ]
-              }
+              hints={undefined}
             />,
             Array [
               <Cell
@@ -935,9 +785,7 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "direction": "row",
-              "hints": Array [
-                0,
-              ],
+              "hints": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -989,21 +837,11 @@ ShallowWrapper {
           >
             <BoardHints
               direction="column"
-              hints={
-                Array [
-                  1,
-                  2,
-                  3,
-                ]
-              }
+              hints={undefined}
             />
             <BoardHints
               direction="column"
-              hints={
-                Array [
-                  0,
-                ]
-              }
+              hints={undefined}
             />
           </div>,
           Array [
@@ -1012,13 +850,7 @@ ShallowWrapper {
             >
               <BoardHints
                 direction="row"
-                hints={
-                  Array [
-                    1,
-                    2,
-                    3,
-                  ]
-                }
+                hints={undefined}
               />
               <Cell
                 column={0}
@@ -1038,11 +870,7 @@ ShallowWrapper {
             >
               <BoardHints
                 direction="row"
-                hints={
-                  Array [
-                    0,
-                  ]
-                }
+                hints={undefined}
               />
               <Cell
                 column={0}
@@ -1070,21 +898,11 @@ ShallowWrapper {
             "children": Array [
               <BoardHints
                 direction="column"
-                hints={
-                  Array [
-                    1,
-                    2,
-                    3,
-                  ]
-                }
+                hints={undefined}
               />,
               <BoardHints
                 direction="column"
-                hints={
-                  Array [
-                    0,
-                  ]
-                }
+                hints={undefined}
               />,
             ],
             "className": "columns",
@@ -1097,11 +915,7 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "direction": "column",
-                "hints": Array [
-                  1,
-                  2,
-                  3,
-                ],
+                "hints": undefined,
               },
               "ref": null,
               "rendered": null,
@@ -1113,9 +927,7 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "direction": "column",
-                "hints": Array [
-                  0,
-                ],
+                "hints": undefined,
               },
               "ref": null,
               "rendered": null,
@@ -1132,13 +944,7 @@ ShallowWrapper {
             "children": Array [
               <BoardHints
                 direction="row"
-                hints={
-                  Array [
-                    1,
-                    2,
-                    3,
-                  ]
-                }
+                hints={undefined}
               />,
               Array [
                 <Cell
@@ -1165,11 +971,7 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "direction": "row",
-                "hints": Array [
-                  1,
-                  2,
-                  3,
-                ],
+                "hints": undefined,
               },
               "ref": null,
               "rendered": null,
@@ -1214,11 +1016,7 @@ ShallowWrapper {
             "children": Array [
               <BoardHints
                 direction="row"
-                hints={
-                  Array [
-                    0,
-                  ]
-                }
+                hints={undefined}
               />,
               Array [
                 <Cell
@@ -1245,9 +1043,7 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "direction": "row",
-                "hints": Array [
-                  0,
-                ],
+                "hints": undefined,
               },
               "ref": null,
               "rendered": null,

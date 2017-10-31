@@ -5,7 +5,9 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <BoardContainer
+    columnHints={Array []}
     columns={2}
+    rowHints={Array []}
     rows={2}
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -21,8 +23,10 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "cellStates": Object {},
+      "columnHints": Array [],
       "columns": 2,
       "onClick": [Function],
+      "rowHints": Array [],
       "rows": 2,
     },
     "ref": null,
@@ -36,8 +40,10 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "cellStates": Object {},
+        "columnHints": Array [],
         "columns": 2,
         "onClick": [Function],
+        "rowHints": Array [],
         "rows": 2,
       },
       "ref": null,

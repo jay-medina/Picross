@@ -2,7 +2,7 @@ jest.mock('../Cell/cellStateTransformer');
 
 import React from 'react';
 import { shallow, ShallowWrapper } from 'enzyme';
-import BoardContainer from './BoardContainer';
+import BoardContainer from '.';
 import { updateState, CellState } from '../Cell/cellStateTransformer';
 
 describe('<BoardContainer />', () => {
@@ -11,7 +11,7 @@ describe('<BoardContainer />', () => {
   describe('when the container is created', () => {
     beforeEach(() => {
       wrapper = shallow(
-        <BoardContainer rows={2} columns={2} />,
+        <BoardContainer rows={2} columns={2} rowHints={[]} columnHints={[]} />,
       );
     });
 
@@ -23,7 +23,7 @@ describe('<BoardContainer />', () => {
   describe('when the board is clicked', () => {
     beforeEach(() => {
       wrapper = shallow(
-        <BoardContainer rows={2} columns={2} />,
+        <BoardContainer rows={2} columns={2} rowHints={[]} columnHints={[]} />,
       );
       (updateState as jest.Mock).mockReturnValue({
         '0 - 0': CellState.Selected,
