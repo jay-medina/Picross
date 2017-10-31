@@ -12,27 +12,45 @@ export interface BoardProps {
   cellStates: CellStates;
 }
 
+const hints = [
+  [1, 2, 3],
+  [0],
+  [4, 5, 6],
+  [1, 1],
+  [0],
+];
+
 class Board extends React.PureComponent<BoardProps, {}> {
   render() {
     return (
       <div>
-        {this.createRowOfCells()}
+        <div className="columns">
+          {this.createColumns()}
+        </div>
+        {this.createRows()}
       </div>
     );
   }
-  private createRowOfCells() {
+  private createColumns() {
+    return Range(0, this.props.columns).map(
+      (value: number, key: number) =>
+        <BoardHints direction="column" key={key} hints={hints[value]} />,
+    ).toArray();
+  }
+
+  private createRows() {
     const { rows } = this.props;
 
     return Range(0, rows).map(
       (value: number) => this.createRow(value),
-    ).toJS();
+    ).toArray();
   }
 
   private createRow(rowIndex: number) {
     const { columns } = this.props;
     return (
       <div key={rowIndex} className="row">
-        <BoardHints direction="row" hints={[1, 2, 3]} />
+        <BoardHints direction="row" hints={hints[rowIndex]} />
         {this.createCellArray(columns, rowIndex)}
       </div>
     );
@@ -51,7 +69,7 @@ class Board extends React.PureComponent<BoardProps, {}> {
           state={state}
         />
       );
-    }).toJS();
+    }).toArray();
   }
 }
 
