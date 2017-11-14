@@ -12,6 +12,7 @@ const rowHints = [
   [3],
   [4],
   [5],
+  [6],
 ];
 
 const colHints = [
@@ -20,11 +21,12 @@ const colHints = [
   [3],
   [2],
   [1],
+  [2],
 ];
 
 function render() {
   ReactDOM.render(
-    <Board rows={5} columns={5} rowHints={rowHints} columnHints={colHints} />, mainContainer);
+    <Board rows={6} columns={6} rowHints={rowHints} columnHints={colHints} />, mainContainer);
 }
 
 render();

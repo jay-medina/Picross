@@ -16,11 +16,27 @@ class Cell extends React.PureComponent<CellProps, {}> {
   }
   render() {
     return (
-      <div className="cell" onClick={this.onClick}>
+      <div className={`cell ${this.borderCell()}`} onClick={this.onClick}>
         {this.getChildElement()}
       </div>
     );
   }
+
+  private borderCell() {
+    const { column } = this.props;
+    if (column < 4) 
+      return '';
+
+    if ((column + 1) % 5 === 0) {
+      return 'border-cell-left';
+    } 
+    
+    if (column % 5 === 0) {
+      return 'border-cell-right';
+    }
+    return '';
+  }
+
   private getChildElement() {
     const { state } = this.props;
     switch (state) {

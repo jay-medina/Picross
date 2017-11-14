@@ -28,3 +28,11 @@
   color:white;
   background-color: var(--secondary-color);
 }
+
+.cell.border-cell-left {
+  border-right-color: white;
+}
+
+.cell.border-cell-right {
+  border-left-color: white;
+}

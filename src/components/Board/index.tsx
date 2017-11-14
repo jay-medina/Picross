@@ -28,8 +28,8 @@ class Board extends React.PureComponent<BoardProps, {}> {
   private createColumns() {
     const { columnHints } = this.props;
     return Range(0, this.props.columns).map(
-      (value: number, key: number) =>
-        <BoardHints direction="column" key={key} hints={columnHints[value]} />,
+      (value, key) =>
+        <BoardHints direction="column" key={key} hints={columnHints[value as number]} />,
     ).toArray();
   }
 
@@ -37,7 +37,7 @@ class Board extends React.PureComponent<BoardProps, {}> {
     const { rows } = this.props;
 
     return Range(0, rows).map(
-      (value: number) => this.createRow(value),
+      value => this.createRow(value as number),
     ).toArray();
   }
 
@@ -52,14 +52,15 @@ class Board extends React.PureComponent<BoardProps, {}> {
   }
 
   private createCellArray(columns: number, row: number) {
-    return Range(0, columns).map((col: number) => {
-      const key = createKey(row, col);
+    return Range(0, columns).map((c) => {
+      const column = c as number;
+      const key = createKey(row, column);
       const state = getState(this.props.cellStates, key);
       return (
         <Cell
           key={key}
           row={row}
-          column={col}
+          column={column}
           onClick={this.props.onClick}
           state={state}
         />
