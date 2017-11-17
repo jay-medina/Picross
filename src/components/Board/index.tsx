@@ -63,6 +63,8 @@ class Board extends React.PureComponent<BoardProps, {}> {
           column={column}
           onClick={this.props.onClick}
           state={state}
+          totalColumns={this.props.columns}
+          totalRows={this.props.rows}
         />
       );
     }).toArray();

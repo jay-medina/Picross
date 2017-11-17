@@ -25,14 +25,22 @@
 .cell.hint {
   font-size: 1.35rem;
   padding-top: 0.25rem;
-  color:white;
+  color:var(--white);
   background-color: var(--secondary-color);
 }
 
-.cell.border-cell-left {
-  border-right-color: white;
+.cell.border-cell-right {
+  border-right-color: var(--white);
 }
 
-.cell.border-cell-right {
-  border-left-color: white;
+.cell.border-cell-left {
+  border-left-color: var(--white);
+}
+
+.cell.border-cell-top {
+  border-top-color: var(--white);
+}
+
+.cell.border-cell-bottom {
+  border-bottom-color: var(--white);
 }

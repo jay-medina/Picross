@@ -11,7 +11,7 @@ describe('Cell', () => {
     beforeEach(() => {
       onClick = jest.fn();
       wrapper = shallow(
-        <Cell row={0} column={0} onClick={onClick}/>,
+        <Cell row={0} column={0} onClick={onClick} totalColumns={1} totalRows={1} />,
       );
     });
 
@@ -24,7 +24,10 @@ describe('Cell', () => {
     beforeEach(() => {
       onClick = jest.fn();
       wrapper = shallow(
-        <Cell row={0} column={0} state={CellState.Selected} onClick={onClick}/>,
+        <Cell row={0} 
+          column={0} 
+          state={CellState.Selected} 
+          onClick={onClick} totalColumns={1} totalRows={1} />,
       );
     });
 
@@ -37,7 +40,8 @@ describe('Cell', () => {
     beforeEach(() => {
       onClick = jest.fn();
       wrapper = shallow(
-        <Cell row={0} column={0} state={CellState.Crossed} onClick={onClick}/>,
+        <Cell row={0} column={0} 
+          state={CellState.Crossed} onClick={onClick} totalColumns={1} totalRows={1} />,
       );
     });
     it('should cross out the cell', () => {
@@ -49,7 +53,8 @@ describe('Cell', () => {
     beforeEach(() => {
       onClick = jest.fn();
       wrapper = shallow(
-        <Cell row={0} column={0} state={CellState.Crossed} onClick={onClick}/>,
+        <Cell row={0} column={0}
+          state={CellState.Crossed} onClick={onClick} totalColumns={1} totalRows={1} />,
       );
       wrapper.simulate('click');
     });
