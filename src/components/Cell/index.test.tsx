@@ -63,4 +63,56 @@ describe('Cell', () => {
       expect(onClick).toHaveBeenCalled();
     });
   });
+
+  describe('when its a 5x5', () => {
+    beforeEach(() => {
+      wrapper = shallow(
+        <Cell row={4} column={4} onClick={onClick} totalColumns={5} totalRows={5} />,
+      );
+    });
+
+    it('displays only with cell classname', () => {
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
+  describe('when its a 6x6', () => {
+    describe('when its the last cell', () => {
+      beforeEach(() => {
+        wrapper = shallow(
+          <Cell row={5} column={5} onClick={onClick} totalColumns={6} totalRows={6} />,
+        );
+      });
+
+      it('adds the border cells', () => {
+        expect(wrapper).toMatchSnapshot();
+      });
+    });
+
+    describe('when its the second to last cell', () => {
+      beforeEach(() => {
+        wrapper = shallow(
+          <Cell row={4} column={4} onClick={onClick} totalColumns={6} totalRows={6} />,
+        );
+      });
+
+      it('adds the border cells', () => {
+        expect(wrapper).toMatchSnapshot();
+      });
+    });
+  });
+
+  describe('when its a 7x7', () => {
+    describe('when its the any other cell', () => {
+      beforeEach(() => {
+        wrapper = shallow(
+          <Cell row={6} column={6} onClick={onClick} totalColumns={7} totalRows={7} />,
+        );
+      });
+
+      it('only has the cell name', () => {
+        expect(wrapper).toMatchSnapshot();
+      });
+    });
+  });
 });
