@@ -21,7 +21,7 @@ ShallowWrapper {
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
-    "key": null,
+    "key": undefined,
     "nodeType": "host",
     "props": Object {
       "children": Array [
@@ -50,12 +50,16 @@ ShallowWrapper {
               onClick={[Function]}
               row={0}
               state={undefined}
+              totalColumns={2}
+              totalRows={2}
             />
             <Cell
               column={1}
               onClick={[Function]}
               row={0}
               state={undefined}
+              totalColumns={2}
+              totalRows={2}
             />
           </div>,
           <div
@@ -70,12 +74,16 @@ ShallowWrapper {
               onClick={[Function]}
               row={1}
               state={undefined}
+              totalColumns={2}
+              totalRows={2}
             />
             <Cell
               column={1}
               onClick={[Function]}
               row={1}
               state={undefined}
+              totalColumns={2}
+              totalRows={2}
             />
           </div>,
         ],
@@ -85,7 +93,7 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": null,
+        "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": Array [
@@ -145,12 +153,16 @@ ShallowWrapper {
                 onClick={[Function]}
                 row={0}
                 state={undefined}
+                totalColumns={2}
+                totalRows={2}
               />,
               <Cell
                 column={1}
                 onClick={[Function]}
                 row={0}
                 state={undefined}
+                totalColumns={2}
+                totalRows={2}
               />,
             ],
           ],
@@ -160,7 +172,7 @@ ShallowWrapper {
         "rendered": Array [
           Object {
             "instance": null,
-            "key": null,
+            "key": undefined,
             "nodeType": "function",
             "props": Object {
               "direction": "row",
@@ -179,6 +191,8 @@ ShallowWrapper {
               "onClick": [Function],
               "row": 0,
               "state": undefined,
+              "totalColumns": 2,
+              "totalRows": 2,
             },
             "ref": null,
             "rendered": null,
@@ -193,6 +207,8 @@ ShallowWrapper {
               "onClick": [Function],
               "row": 0,
               "state": undefined,
+              "totalColumns": 2,
+              "totalRows": 2,
             },
             "ref": null,
             "rendered": null,
@@ -217,12 +233,16 @@ ShallowWrapper {
                 onClick={[Function]}
                 row={1}
                 state={undefined}
+                totalColumns={2}
+                totalRows={2}
               />,
               <Cell
                 column={1}
                 onClick={[Function]}
                 row={1}
                 state={undefined}
+                totalColumns={2}
+                totalRows={2}
               />,
             ],
           ],
@@ -232,7 +252,7 @@ ShallowWrapper {
         "rendered": Array [
           Object {
             "instance": null,
-            "key": null,
+            "key": undefined,
             "nodeType": "function",
             "props": Object {
               "direction": "row",
@@ -251,6 +271,8 @@ ShallowWrapper {
               "onClick": [Function],
               "row": 1,
               "state": undefined,
+              "totalColumns": 2,
+              "totalRows": 2,
             },
             "ref": null,
             "rendered": null,
@@ -265,6 +287,8 @@ ShallowWrapper {
               "onClick": [Function],
               "row": 1,
               "state": undefined,
+              "totalColumns": 2,
+              "totalRows": 2,
             },
             "ref": null,
             "rendered": null,
@@ -279,7 +303,7 @@ ShallowWrapper {
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
-      "key": null,
+      "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
@@ -308,12 +332,16 @@ ShallowWrapper {
                 onClick={[Function]}
                 row={0}
                 state={undefined}
+                totalColumns={2}
+                totalRows={2}
               />
               <Cell
                 column={1}
                 onClick={[Function]}
                 row={0}
                 state={undefined}
+                totalColumns={2}
+                totalRows={2}
               />
             </div>,
             <div
@@ -328,12 +356,16 @@ ShallowWrapper {
                 onClick={[Function]}
                 row={1}
                 state={undefined}
+                totalColumns={2}
+                totalRows={2}
               />
               <Cell
                 column={1}
                 onClick={[Function]}
                 row={1}
                 state={undefined}
+                totalColumns={2}
+                totalRows={2}
               />
             </div>,
           ],
@@ -343,7 +375,7 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": null,
+          "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": Array [
@@ -403,12 +435,16 @@ ShallowWrapper {
                   onClick={[Function]}
                   row={0}
                   state={undefined}
+                  totalColumns={2}
+                  totalRows={2}
                 />,
                 <Cell
                   column={1}
                   onClick={[Function]}
                   row={0}
                   state={undefined}
+                  totalColumns={2}
+                  totalRows={2}
                 />,
               ],
             ],
@@ -418,7 +454,7 @@ ShallowWrapper {
           "rendered": Array [
             Object {
               "instance": null,
-              "key": null,
+              "key": undefined,
               "nodeType": "function",
               "props": Object {
                 "direction": "row",
@@ -437,6 +473,8 @@ ShallowWrapper {
                 "onClick": [Function],
                 "row": 0,
                 "state": undefined,
+                "totalColumns": 2,
+                "totalRows": 2,
               },
               "ref": null,
               "rendered": null,
@@ -451,6 +489,8 @@ ShallowWrapper {
                 "onClick": [Function],
                 "row": 0,
                 "state": undefined,
+                "totalColumns": 2,
+                "totalRows": 2,
               },
               "ref": null,
               "rendered": null,
@@ -475,12 +515,16 @@ ShallowWrapper {
                   onClick={[Function]}
                   row={1}
                   state={undefined}
+                  totalColumns={2}
+                  totalRows={2}
                 />,
                 <Cell
                   column={1}
                   onClick={[Function]}
                   row={1}
                   state={undefined}
+                  totalColumns={2}
+                  totalRows={2}
                 />,
               ],
             ],
@@ -490,7 +534,7 @@ ShallowWrapper {
           "rendered": Array [
             Object {
               "instance": null,
-              "key": null,
+              "key": undefined,
               "nodeType": "function",
               "props": Object {
                 "direction": "row",
@@ -509,6 +553,8 @@ ShallowWrapper {
                 "onClick": [Function],
                 "row": 1,
                 "state": undefined,
+                "totalColumns": 2,
+                "totalRows": 2,
               },
               "ref": null,
               "rendered": null,
@@ -523,6 +569,8 @@ ShallowWrapper {
                 "onClick": [Function],
                 "row": 1,
                 "state": undefined,
+                "totalColumns": 2,
+                "totalRows": 2,
               },
               "ref": null,
               "rendered": null,
@@ -570,7 +618,7 @@ ShallowWrapper {
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
-    "key": null,
+    "key": undefined,
     "nodeType": "host",
     "props": Object {
       "children": Array [
@@ -599,12 +647,16 @@ ShallowWrapper {
               onClick={[Function]}
               row={0}
               state={undefined}
+              totalColumns={2}
+              totalRows={2}
             />
             <Cell
               column={1}
               onClick={[Function]}
               row={0}
               state={undefined}
+              totalColumns={2}
+              totalRows={2}
             />
           </div>,
           <div
@@ -619,12 +671,16 @@ ShallowWrapper {
               onClick={[Function]}
               row={1}
               state={undefined}
+              totalColumns={2}
+              totalRows={2}
             />
             <Cell
               column={1}
               onClick={[Function]}
               row={1}
               state="selected"
+              totalColumns={2}
+              totalRows={2}
             />
           </div>,
         ],
@@ -634,7 +690,7 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": null,
+        "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": Array [
@@ -694,12 +750,16 @@ ShallowWrapper {
                 onClick={[Function]}
                 row={0}
                 state={undefined}
+                totalColumns={2}
+                totalRows={2}
               />,
               <Cell
                 column={1}
                 onClick={[Function]}
                 row={0}
                 state={undefined}
+                totalColumns={2}
+                totalRows={2}
               />,
             ],
           ],
@@ -709,7 +769,7 @@ ShallowWrapper {
         "rendered": Array [
           Object {
             "instance": null,
-            "key": null,
+            "key": undefined,
             "nodeType": "function",
             "props": Object {
               "direction": "row",
@@ -728,6 +788,8 @@ ShallowWrapper {
               "onClick": [Function],
               "row": 0,
               "state": undefined,
+              "totalColumns": 2,
+              "totalRows": 2,
             },
             "ref": null,
             "rendered": null,
@@ -742,6 +804,8 @@ ShallowWrapper {
               "onClick": [Function],
               "row": 0,
               "state": undefined,
+              "totalColumns": 2,
+              "totalRows": 2,
             },
             "ref": null,
             "rendered": null,
@@ -766,12 +830,16 @@ ShallowWrapper {
                 onClick={[Function]}
                 row={1}
                 state={undefined}
+                totalColumns={2}
+                totalRows={2}
               />,
               <Cell
                 column={1}
                 onClick={[Function]}
                 row={1}
                 state="selected"
+                totalColumns={2}
+                totalRows={2}
               />,
             ],
           ],
@@ -781,7 +849,7 @@ ShallowWrapper {
         "rendered": Array [
           Object {
             "instance": null,
-            "key": null,
+            "key": undefined,
             "nodeType": "function",
             "props": Object {
               "direction": "row",
@@ -800,6 +868,8 @@ ShallowWrapper {
               "onClick": [Function],
               "row": 1,
               "state": undefined,
+              "totalColumns": 2,
+              "totalRows": 2,
             },
             "ref": null,
             "rendered": null,
@@ -814,6 +884,8 @@ ShallowWrapper {
               "onClick": [Function],
               "row": 1,
               "state": "selected",
+              "totalColumns": 2,
+              "totalRows": 2,
             },
             "ref": null,
             "rendered": null,
@@ -828,7 +900,7 @@ ShallowWrapper {
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
-      "key": null,
+      "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
@@ -857,12 +929,16 @@ ShallowWrapper {
                 onClick={[Function]}
                 row={0}
                 state={undefined}
+                totalColumns={2}
+                totalRows={2}
               />
               <Cell
                 column={1}
                 onClick={[Function]}
                 row={0}
                 state={undefined}
+                totalColumns={2}
+                totalRows={2}
               />
             </div>,
             <div
@@ -877,12 +953,16 @@ ShallowWrapper {
                 onClick={[Function]}
                 row={1}
                 state={undefined}
+                totalColumns={2}
+                totalRows={2}
               />
               <Cell
                 column={1}
                 onClick={[Function]}
                 row={1}
                 state="selected"
+                totalColumns={2}
+                totalRows={2}
               />
             </div>,
           ],
@@ -892,7 +972,7 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": null,
+          "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": Array [
@@ -952,12 +1032,16 @@ ShallowWrapper {
                   onClick={[Function]}
                   row={0}
                   state={undefined}
+                  totalColumns={2}
+                  totalRows={2}
                 />,
                 <Cell
                   column={1}
                   onClick={[Function]}
                   row={0}
                   state={undefined}
+                  totalColumns={2}
+                  totalRows={2}
                 />,
               ],
             ],
@@ -967,7 +1051,7 @@ ShallowWrapper {
           "rendered": Array [
             Object {
               "instance": null,
-              "key": null,
+              "key": undefined,
               "nodeType": "function",
               "props": Object {
                 "direction": "row",
@@ -986,6 +1070,8 @@ ShallowWrapper {
                 "onClick": [Function],
                 "row": 0,
                 "state": undefined,
+                "totalColumns": 2,
+                "totalRows": 2,
               },
               "ref": null,
               "rendered": null,
@@ -1000,6 +1086,8 @@ ShallowWrapper {
                 "onClick": [Function],
                 "row": 0,
                 "state": undefined,
+                "totalColumns": 2,
+                "totalRows": 2,
               },
               "ref": null,
               "rendered": null,
@@ -1024,12 +1112,16 @@ ShallowWrapper {
                   onClick={[Function]}
                   row={1}
                   state={undefined}
+                  totalColumns={2}
+                  totalRows={2}
                 />,
                 <Cell
                   column={1}
                   onClick={[Function]}
                   row={1}
                   state="selected"
+                  totalColumns={2}
+                  totalRows={2}
                 />,
               ],
             ],
@@ -1039,7 +1131,7 @@ ShallowWrapper {
           "rendered": Array [
             Object {
               "instance": null,
-              "key": null,
+              "key": undefined,
               "nodeType": "function",
               "props": Object {
                 "direction": "row",
@@ -1058,6 +1150,8 @@ ShallowWrapper {
                 "onClick": [Function],
                 "row": 1,
                 "state": undefined,
+                "totalColumns": 2,
+                "totalRows": 2,
               },
               "ref": null,
               "rendered": null,
@@ -1072,6 +1166,8 @@ ShallowWrapper {
                 "onClick": [Function],
                 "row": 1,
                 "state": "selected",
+                "totalColumns": 2,
+                "totalRows": 2,
               },
               "ref": null,
               "rendered": null,

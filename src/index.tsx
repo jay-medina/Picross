@@ -12,6 +12,7 @@ const rowHints = [
   [3],
   [4],
   [5],
+  [6],
 ];
 
 const colHints = [
@@ -20,6 +21,7 @@ const colHints = [
   [3],
   [2],
   [1],
+  [2],
 ];
 
 function render() {
