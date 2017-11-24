@@ -15,13 +15,9 @@ export interface BoardContainerState {
 }
 
 class BoardContainer extends React.PureComponent<BoardContainerProps, BoardContainerState> {
-  constructor() {
-    super();
-    this.onClick = this.onClick.bind(this);
-    this.state = {
-      cellStates: {},
-    };
-  }
+  state = {
+    cellStates: {},
+  };
 
   render() {
     return <Board
@@ -31,7 +27,7 @@ class BoardContainer extends React.PureComponent<BoardContainerProps, BoardConta
     />;
   }
 
-  private onClick(row: number, column: number) {
+  private onClick = (row: number, column: number) => {
     const newCellStates = updateState(
       this.state.cellStates,
       row,
@@ -42,7 +38,6 @@ class BoardContainer extends React.PureComponent<BoardContainerProps, BoardConta
       cellStates: newCellStates,
     });
   }
-
 }
 
 export default BoardContainer;

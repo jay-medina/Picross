@@ -12,10 +12,6 @@ export interface CellProps {
 }
 
 class Cell extends React.PureComponent<CellProps, {}> {
-  constructor(props: CellProps) {
-    super(props);
-    this.onClick = this.onClick.bind(this);
-  }
   render() {
     return (
       <div className={this.getClassName()} onClick={this.onClick}>
@@ -23,6 +19,8 @@ class Cell extends React.PureComponent<CellProps, {}> {
       </div>
     );
   }
+
+  private onClick = () => this.props.onClick(this.props.row, this.props.column);
 
   private getClassName() {
     return `cell ${this.borderColumnCell()} ${this.borderRowCell()}`;
@@ -65,9 +63,6 @@ class Cell extends React.PureComponent<CellProps, {}> {
       case 'selected': return <div className="selected" />;
       default: return null;
     }
-  }
-  private onClick() {
-    this.props.onClick(this.props.row, this.props.column);
   }
 }
 
